@@ -13,8 +13,10 @@ namespace WpfApp6
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-
-            return ""+ (int)value;
+            string[] card = { "Ace of Spades", "Two of Spades", "Three of Spades", "4 of Spades" };
+            // Note this array could contain the paths of imagees
+            return card[(int)value-1];
+            //return ""+ (int)value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
