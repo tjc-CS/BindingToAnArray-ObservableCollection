@@ -25,8 +25,9 @@ namespace WpfApp6
         {
            
             g = new Game();
-            DataContext = g; 
+            
             InitializeComponent();
+            DataContext = g; 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
